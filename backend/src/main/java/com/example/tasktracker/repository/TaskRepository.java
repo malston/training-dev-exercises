@@ -8,4 +8,7 @@ import java.util.List;
 
 public interface TaskRepository extends JpaRepository<Task, Long> {
     List<Task> findByStatus(TaskStatus status);
+
+    // BUG: This matches exact title, not substring
+    List<Task> findByTitle(String title);
 }

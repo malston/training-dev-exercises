@@ -25,6 +25,11 @@ public class TaskService {
         return taskRepository.findById(id);
     }
 
+    public List<Task> searchTasks(String query) {
+        // BUG: uses exact match instead of substring match
+        return taskRepository.findByTitle(query);
+    }
+
     public List<Task> getTasksByStatus(TaskStatus status) {
         return taskRepository.findByStatus(status);
     }
