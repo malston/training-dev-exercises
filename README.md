@@ -53,3 +53,19 @@ The frontend starts at `http://localhost:3000`.
 | 6. Extensions              | `modules/06-extensions/`   | Subagents, skills, MCP servers       |
 
 Each exercise directory has a `README.md` with instructions and acceptance criteria.
+
+## Solutions
+
+This branch (`solutions`) contains worked solutions for every exercise. Each module directory has a `SOLUTIONS.md` explaining the approach and key decisions.
+
+**Attempt the exercises first.** Switch to the `main` branch to work through exercises without seeing answers:
+
+```bash
+git checkout main
+```
+
+When you're ready to check your work, switch back:
+
+```bash
+git checkout solutions
+```
