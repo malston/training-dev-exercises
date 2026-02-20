@@ -43,7 +43,8 @@ public class TaskController {
     @PostMapping
     public ResponseEntity<Task> createTask(@Valid @RequestBody Task task) {
         Task created = taskService.createTask(task);
-        return ResponseEntity.status(HttpStatus.CREATED).body(created);
+        // Bug #1: Returns 200 instead of 201 for created resources
+        return ResponseEntity.ok(created);
     }
 
     @PutMapping("/{id}")

@@ -35,6 +35,8 @@ public class TaskService {
 
     public Optional<Task> updateTask(Long id, Task taskDetails) {
         return taskRepository.findById(id).map(task -> {
+            // Bug #2: Doesn't null-check taskDetails fields before setting them.
+            // When a partial update sends only status, title/description become null.
             task.setTitle(taskDetails.getTitle());
             task.setDescription(taskDetails.getDescription());
             task.setStatus(taskDetails.getStatus());

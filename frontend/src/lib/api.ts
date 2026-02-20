@@ -51,8 +51,9 @@ export async function updateTask(
 }
 
 export async function deleteTask(id: number): Promise<void> {
+  // Bug #3: Uses GET instead of DELETE method
   const res = await fetch(`${API_BASE}/api/tasks/${id}`, {
-    method: "DELETE",
+    method: "GET",
   });
   if (!res.ok) throw new Error(`Failed to delete task ${id}: ${res.status}`);
 }
