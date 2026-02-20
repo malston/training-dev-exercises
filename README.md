@@ -5,10 +5,10 @@ Exercise materials for the [Developer Learning Path](https://malston.github.io/c
 ## Project Structure
 
 ```
-training-dev-exercises/
+training-dev-modules/
 ├── backend/          # Java/Spring Boot REST API (task tracker)
 ├── frontend/         # TypeScript/Next.js frontend
-├── exercises/        # Exercise instructions per module
+├── modules/        # Exercise instructions per module
 └── CLAUDE.md         # Project conventions for Claude Code
 ```
 
@@ -43,13 +43,13 @@ The frontend starts at `http://localhost:3000`.
 
 ## Exercises by Module
 
-| Module                     | Directory                    | Focus                                |
-| -------------------------- | ---------------------------- | ------------------------------------ |
-| 1. Prompting Foundations   | `exercises/01-prompting/`    | Writing specific, actionable prompts |
-| 2. Verification Loop       | `exercises/02-verification/` | Building feedback into every task    |
-| 3. Test-Driven Development | `exercises/03-tdd/`          | Using tests as requirements          |
-| 4. Debugging               | `exercises/04-debugging/`    | Systematic troubleshooting           |
-| 5. Context Management      | `exercises/05-context/`      | Managing what Claude sees            |
-| 6. Extensions              | `exercises/06-extensions/`   | Subagents, skills, MCP servers       |
+| Module                     | Directory                  | Focus                                |
+| -------------------------- | -------------------------- | ------------------------------------ |
+| 1. Prompting Foundations   | `modules/01-prompting/`    | Writing specific, actionable prompts |
+| 2. Verification Loop       | `modules/02-verification/` | Building feedback into every task    |
+| 3. Test-Driven Development | `modules/03-tdd/`          | Using tests as requirements          |
+| 4. Debugging               | `modules/04-debugging/`    | Systematic troubleshooting           |
+| 5. Context Management      | `modules/05-context/`      | Managing what Claude sees            |
+| 6. Extensions              | `modules/06-extensions/`   | Subagents, skills, MCP servers       |
 
 Each exercise directory has a `README.md` with instructions and acceptance criteria.
