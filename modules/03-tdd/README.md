@@ -15,7 +15,7 @@ The test file describes exactly what the service should do. Read it before imple
 
 ## Exercise 2: Context Isolation
 
-Write tests for the "Task Comments" feature from `exercises/01-prompting/requirements.md` in a fresh Claude Code session:
+Write tests for the "Task Comments" feature from `modules/01-prompting/requirements.md` in a fresh Claude Code session:
 
 1. Open Claude Code and write tests for `CommentController` and `CommentService`
 2. Run `/clear` or open a new session

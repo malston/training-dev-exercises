@@ -42,7 +42,7 @@ Compare: did planning first lead to a better outcome than jumping straight to im
 Complete the search feature fix from Exercise 1 or 2. Then:
 
 1. Run `/clear` to reset context
-2. Start a new task: implement the "Due Dates" feature from `exercises/01-prompting/requirements.md`
+2. Start a new task: implement the "Due Dates" feature from `modules/01-prompting/requirements.md`
 3. Notice how `/clear` prevents the search feature context from polluting the due dates task
 
 Observe the difference in Claude's focus before and after clearing.
