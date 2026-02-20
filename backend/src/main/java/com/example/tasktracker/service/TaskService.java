@@ -29,6 +29,10 @@ public class TaskService {
         return taskRepository.findByStatus(status);
     }
 
+    public List<Task> searchTasks(String query) {
+        return taskRepository.findByTitleContainingIgnoreCase(query);
+    }
+
     public Task createTask(Task task) {
         return taskRepository.save(task);
     }

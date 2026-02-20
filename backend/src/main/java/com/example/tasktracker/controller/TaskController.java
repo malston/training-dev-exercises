@@ -33,6 +33,11 @@ public class TaskController {
         return ResponseEntity.ok(tasks);
     }
 
+    @GetMapping("/search")
+    public ResponseEntity<List<Task>> searchTasks(@RequestParam String q) {
+        return ResponseEntity.ok(taskService.searchTasks(q));
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<Task> getTaskById(@PathVariable Long id) {
         return taskService.getTaskById(id)
